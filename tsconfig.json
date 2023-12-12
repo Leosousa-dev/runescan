@@ -4,8 +4,9 @@
     "module": "commonjs",
     "outDir": "./dist",
     "rootDir": "./src",
-    "strict": true
+    "strict": true,
+    "typeRoots": ["types/types.d.ts"]
   },
-  "include": ["src/**/*.ts"],
+  "include": ["src/**/*.ts", "src/test/usage.ts"],
   "exclude": ["node_modules"]
 }

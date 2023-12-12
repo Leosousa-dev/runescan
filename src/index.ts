@@ -1,14 +1,21 @@
-
+import { rule } from "../types/types";
 
 export class Rune{
-   private rules: Array<object>;
+   private rules: rule | rule[];
 
-   constructor(input: Array<string>, rules: Array<object>){
+   constructor(rules: rule | rule[]){
       this.rules = rules;
    }
 
    process(input: Array<string>): void{
+      let index: number = 0;
 
+      while(input.length > index){
+         let cursor = input[index];
+
+         console.log(cursor)
+         index++
+      }     
 
    }
 
