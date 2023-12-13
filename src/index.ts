@@ -1,4 +1,4 @@
-import { rule } from "../types/types";
+import { rule } from "../types/types.d";
 
 export class Rune{
    private rules: rule | rule[];
@@ -7,16 +7,22 @@ export class Rune{
       this.rules = rules;
    }
 
-   process(input: Array<string>): void{
+   process(input: string[]): void{
       let index: number = 0;
-
-      while(input.length > index){
-         let cursor = input[index];
-
-         console.log(cursor)
-         index++
-      }     
-
+      
+      if(Array.isArray(this.rules)){
+         for(const rule of this.rules){
+            this.apply(input, rule)
+         }
+      }
    }
-
+   private apply(input: string[], rules: rule): void{
+      for(const i of input){
+         if(rules.pattern.test(i)){
+            console.log(`Match found for rule: ${rules.pattern.source} with input: ${i}`);
+         }
+      }
+   }
 }
+
+export { rule };

@@ -5,7 +5,7 @@
     "outDir": "./dist",
     "rootDir": "./src",
     "strict": true,
-    "typeRoots": ["types/types.d.ts"]
+    "typeRoots": ["./src/types/types.d.ts"]
   },
   "include": ["src/**/*.ts", "src/test/usage.ts"],
   "exclude": ["node_modules"]
