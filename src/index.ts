@@ -19,10 +19,12 @@ export class Rune{
    private apply(input: string[], rules: rule): void{
       for(const i of input){
          if(rules.pattern.test(i)){
-            console.log(`Match found for rule: ${rules.pattern.source} with input: ${i}`);
-         }
-      }
-   }
-}
+            if(rules.action){
+               rules.action();
+            }
+         };
+      };
+   };
+};
 
 export { rule };
