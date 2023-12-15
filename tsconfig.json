@@ -4,9 +4,10 @@
     "module": "commonjs",
     "outDir": "./dist",
     "rootDir": "./src",
+    "esModuleInterop": true,
     "strict": true,
-    "typeRoots": ["./src/types/types.d.ts"]
+    "declaration": true,
   },
-  "include": ["src/**/*.ts", "src/test/usage.ts"],
-  "exclude": ["node_modules"]
+  "include": ["src/**/*.ts", "types/**/*.d.ts"],
+  "exclude": ["node_modules", "src/test/usage.ts"]
 }
