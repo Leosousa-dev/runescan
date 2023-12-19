@@ -1,12 +1,20 @@
 {
-  "name": "runes",
+  "name": "runescan",
   "version": "1.0.0",
-  "main": "index.js",
+  "author": "leonarddev",
+  "private": false,
+  "main": "dist/index.js",
+  "types": "dist/types.d.ts",
+  "files": [
+    "dist",
+    "types"
+  ],
+  
   "scripts": {
     "dev": "tsx src/index.ts",
     "build": "tsc",
     "build:test": "node dist/test/usage.js",
-    "test": " npx tsx src/test/usage.ts"
+    "test": "npx tsx src/test/usage.ts"
   },
   "license": "MIT",
   "devDependencies": {
