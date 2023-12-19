@@ -1,30 +1,56 @@
 import { rule } from "../types/types.d";
 
 export class Rune{
-   private rules: rule | rule[];
+   private rules: rule[];
 
-   constructor(rules: rule | rule[]){
-      this.rules = rules;
+   constructor(rules: rule[]){
+      this.rules = rules
    }
 
-   process(input: string[]): void{
+   process(input: string | string[]): void{
       let index: number = 0;
       
-      if(Array.isArray(this.rules)){
+      if(Array.isArray(input)){
          for(const rule of this.rules){
             this.apply(input, rule)
          }
       }
+      else{
+         console.log("is not arry")
+      }
+
    }
+
    private apply(input: string[], rules: rule): void{
       for(const i of input){
          if(rules.pattern.test(i)){
             if(rules.action){
-               rules.action();
+               rules.action()
             }
-         };
-      };
-   };
+         }
+      }
+   }
+
 };
 
 export { rule };
+
+
+
+
+
+      // if(Array.isArray(this.rules)){
+      //    for(const rule of this.rules){
+      //       this.apply(input, rule)
+      //    }
+      // }
+   // }
+   // private apply(input: string[], rules: rule): void{
+   //    for(const i of input){
+   //       if(rules.pattern.test(i)){
+   //          if(rules.action){
+   //             rules.action();
+   //          }
+   //       };
+   //    };
+   // };
