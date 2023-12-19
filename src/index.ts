@@ -16,7 +16,13 @@ export class Rune{
          }
       }
       else{
-         console.log("is not arry")
+         for(const rule of this.rules){
+             if(rule.pattern.test(input)){
+               if(rule.action){
+                  rule.action()
+               }
+             }
+         }
       }
 
    }
