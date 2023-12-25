@@ -8,7 +8,10 @@ export class Rune{
      this.value = value;
    };
 
- 
+   with(expected: string , fn: () => void): this{
+      this.cases.set(expected, fn);
+      return this
+   }
 
 
 };
