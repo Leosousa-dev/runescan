@@ -8,6 +8,6 @@
     "strict": true,
     "declaration": true,
   },
-  "include": ["src/**/*.ts", "types/**/*.d.ts"],
-  "exclude": ["node_modules", "src/test/usage.ts"]
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules"]
 }
