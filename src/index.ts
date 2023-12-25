@@ -17,9 +17,19 @@ export class Rune{
       this.default = fn
       return this;
    }
+
+   private execute(): void{
+      const callback = this.cases.get(this.value);
+      if(callback){
+         callback();
+      } else if(this.default){
+         this.default();
+      }
+   }
    
-
-
+   match(value: string | number): Rune{
+      return new Rune(value);
+   }
 };
 
 
