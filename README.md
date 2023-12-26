@@ -1,15 +1,44 @@
-# Rune
+<div align="center">
+   <h1>Rune</h1>
+   <strong>Runes</strong> - Simplificando o Reconhecimento de Padrões
+</div>
 
-**Runes** - Simplificando o Reconhecimento de Padrões
 
-### #Introdução
+### ✦ Introdução
+A biblioteca rune visa simplificar a lógica condicional, permitindo que os desenvolvedores evitem estruturas excessivas de **if-else** e tornem o código mais legível e conciso.
 
-A biblioteca Runes foi desenvolvida para simplificar e estruturar o reconhecimento de padrões em código, eliminando a necessidade de inúmeros blocos if-else. 
+### ✦ Principais métodos
+> falando um pouco sobre os principais métodos e o que 
+cada um faz.
 
-Com Runes, você pode expressar condições de maneira mais legível e concisa.
+**`match()`:**
 
-### #Instalação
+Método utilizado para inicializar uma estrutura para realizar verificações de um valor.
 
-```bash
-   npm install runes
+```javascript
+   const pattern = Rune()
+
+   pattern.match(value)(
+      // faça suas verificações aqui
+   )
 ```
+
+**`with()`**:
+
+Método utilizado para fazer verificações e realizar ações com base no valor recebido.
+
+```javascript
+// fazendo uso do método .with
+
+  pattern.match(value)
+     .with(10, () => {
+         console.log("ok")
+     })
+     .with(0, () => {
+         console.log("ok")
+     })
+     .default((value) => {
+     console.log(`value: ${value} not falid`)
+  })
+```
+
