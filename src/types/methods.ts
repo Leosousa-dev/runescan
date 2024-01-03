@@ -1,4 +1,8 @@
 export type matchType = {
-   with: (expected: any, fn: () => void) => matchType;
-   default: (fn: () => void) => void;
+   with: _with;
+   default: _default;
 };
+
+export type _with = (expected: any, fn: () => void) => matchType;
+
+export type _default = (fn: () => void) => void
