@@ -1,3 +1,4 @@
-export type match<T> = {
-   with: (expected: T, fn: () => void) => match<T>;
+export type matchType = {
+   with: (expected: any, fn: () => void) => matchType;
+   default: (fn: () => void) => void;
 };
