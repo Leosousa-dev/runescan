@@ -9,3 +9,5 @@ const match = (value: any) => {
 
    return api;
 }
+
+export default match;
