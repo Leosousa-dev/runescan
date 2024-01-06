@@ -1,11 +1,17 @@
 <div align="center">
-   <h1>Rune</h1>
-   <strong>Runes</strong> - Simplificando o Reconhecimento de Padrões
+   <h1>Runescan</h1>
+   <strong>Runescan</strong> - Simplificando o Reconhecimento de Padrões
+</div>
+<br>
+<div align="center">
+<img alt="npm" src="https://img.shields.io/npm/dm/runescan?style=for-the-badge">
+
+<img alt="npm" src="https://img.shields.io/npm/v/runescan?style=for-the-badge">
+
 </div>
 
-
 ### ✦ Introdução
-A biblioteca rune visa simplificar a lógica condicional, permitindo que os desenvolvedores evitem estruturas excessivas de **if-else** e tornem o código mais legível e conciso.
+A biblioteca runescan visa simplificar a lógica condicional, permitindo que os desenvolvedores evitem estruturas excessivas de **if-else** e tornem o código mais legível e expressivo.
 
 
 ### ✦ Principais métodos
