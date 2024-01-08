@@ -1,2 +1,3 @@
-import match from "./core/methods/match";
+import {match} from "./core/methods/match";
 
+export {match};

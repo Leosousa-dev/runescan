@@ -1,8 +1,17 @@
-export type matchType = {
-   with: _with;
-   default: _default;
+
+export type MatcherFunction = (expected: any, fn: () => void) => MatcherResult;
+
+export interface MatcherResult {
+  with: MatcherFunction;
+  default: (fn: () => void) => void;
+}
+
+export type Match = (value: any) => MatcherResult;
+
+export type MatchedContext = {
+  matched: boolean;
+  value?: any;
 };
 
-export type _with = (expected: any, fn: () => void) => matchType;
 
-export type _default = (fn: () => void) => void
+export type voidFn = () => void

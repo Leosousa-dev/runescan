@@ -1,13 +1,10 @@
-import {_with} from "./with"
+import {_with} from "./with";
+import {_default} from "./default";
+import {Match, MatchedContext, MatcherResult} from "../../types/methods"
 
-const match = (value: any) => {
-   let matched: boolean = false
-   
-   const api = {
-      with: (expected: any, fn: () => void) => match(_with(expected,value, fn))
-   }
+const match: Match = (value: any): MatcherResult => {
+   const context: MatchedContext = {matched: false, value};
+   return { with: _with.bind(null, context), default: _default.bind(null, context)};
+};
 
-   return api;
-}
-
-export default match;
+export {match}
