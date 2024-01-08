@@ -1,8 +1,8 @@
-export type matchType = {
-   with: _with;
-   default: _default;
-};
+type Fn = () => void
 
-export type _with = (expected: any, fn: () => void) => matchType;
+type Matche<T> = (expected: T, fn: Fn) => MatcheResu<T>;
 
-export type _default = (fn: () => void) => void
+interface MatcheResu<T> {
+   with: Matche<T>;
+   default: (fn: Fn) => void;
+}
