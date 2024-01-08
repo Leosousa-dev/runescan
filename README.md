@@ -4,9 +4,11 @@
 </div>
 <br>
 <div align="center">
-<img alt="npm" src="https://img.shields.io/npm/dm/runescan?style=for-the-badge">
 
 <img alt="npm" src="https://img.shields.io/npm/v/runescan?style=for-the-badge">
+<img alt="npm" src="https://img.shields.io/npm/dm/runescan?style=for-the-badge">
+
+<img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/m/Leosousa-dev/runes?style=for-the-badge&color=%239142D8">
 
 </div>
 
