@@ -1,7 +1,6 @@
 const _default = (fn: () => void, matched: boolean) => {
 
-   if(matched){
-      console.log("matched true");
+   if(matched === false){
       fn()
    }
    return;
