@@ -1,46 +1,45 @@
-# Contribuições para Runescan
+# Contributions to Runescan
 
+## How to Contribute
 
-## Como Contribuir
+Thank you for considering contributing to the project! If you are not familiar with the contribution process on GitHub, please read the [GitHub Contribution Guide](https://guides.github.com/activities/contributing-to-open-source/).
 
-Obrigado por considerar contribuir para o projeto! Se você não estiver familiarizado com o processo de contribuição no GitHub, leia o [Guia de Contribuição do GitHub](https://guides.github.com/activities/contributing-to-open-source/).
+### Basic Workflow
 
-### Fluxo de Trabalho Básico
+1. Fork the repository.
+2. Create a branch for your contribution: `git checkout -b your-feature-name`.
+3. Develop your changes.
+4. Commit and push to your branch: `git commit -m "Description of changes"` and `git push origin your-feature-name`.
+5. Open a Pull Request (PR) to the `main` or `develop` branch, as appropriate.
 
-1. Faça um fork do repositório.
-2. Crie uma branch para a sua contribuição: `git checkout -b nome-da-sua-feature`.
-3. Desenvolva suas alterações.
-4. Faça commit e push para a sua branch: `git commit -m "Descrição das alterações"` e `git push origin nome-da-sua-feature`.
-5. Abra um Pull Request (PR) para a branch `main` ou `develop`, conforme apropriado.
+### Main Branches
 
-### Branches Principais
+- `main`: Reflects the stable production version of the project.
+- `develop`: Main development branch.
 
-- `main`: Reflete a versão de produção estável do projeto.
-- `develop`: Principal branch de desenvolvimento.
+### Secondary Branches
 
-### Branches Secundárias
+- `feature/your-feature-name`: For the development of new features.
+- `bugfix/bug-name`: For bug fixes.
+- `test/test-name`: For specific tests.
+- `docs/documentation-name`: For documentation updates.
 
-- `feature/nome-da-sua-feature`: Para desenvolvimento de novas funcionalidades.
-- `bugfix/nome-do-bug`: Para correção de bugs.
-- `test/nome-do-teste`: Para testes específicos.
-- `docs/nome-da-documentacao`: Para atualizações na documentação.
+### Semantic Versioning
 
-### Versionamento Semântico
+We use semantic versioning to manage versions. Make sure to update version numbers in `package.json` or similar appropriately.
 
-Usamos o versionamento semântico para gerenciar versões. Certifique-se de atualizar adequadamente os números de versão no `package.json` ou similar.
+### Testing
 
-### Testes
+Before creating a PR, ensure that all tests pass. Add relevant tests if necessary.
 
-Antes de criar um PR, certifique-se de que todos os testes passam. Adicione testes relevantes, se necessário.
+### Best Practices
 
-### Boas Práticas
+- Follow the project's code conventions.
+- Maintain meaningful commit messages.
+- Document new features or changes in existing documentation.
 
-- Siga as convenções de código do projeto.
-- Mantenha mensagens de commit significativas.
-- Documente novas funcionalidades ou alterações na documentação existente.
+### Additional Help
 
-### Ajuda Adicional
+If you have questions or need assistance, feel free to open an issue or contact [responsible-name] via [email or another form of contact].
 
-Se você tiver dúvidas ou precisar de ajuda, sinta-se à vontade para abrir uma issue ou entrar em contato com [nome-do-responsavel] via [e-mail ou outra forma de contato].
-
-Obrigado pela sua contribuição!
+Thank you for your contribution!
