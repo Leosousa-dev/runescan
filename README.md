@@ -114,4 +114,4 @@ console.log(accessLevel);
 ```
 
 ### ✦ Contributions
-We are open to contributions! Before you start, please read our [**contribution guidelines**](../../CONTRIBUTING.md).
+We are open to contributions! Before you start, please read our [**contribution guidelines**](./CONTRIBUTING.md).
