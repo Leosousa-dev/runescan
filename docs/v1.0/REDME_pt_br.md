@@ -12,6 +12,14 @@
 
 </div>
 
+### Documentação
+
+A documentação está disponível em várias versões e linguagens. Escolha a versão e linguagem apropriadas para você:
+
+- [Versão 1.0](docs/v1.0/README.md)
+  - [Documentação em Inglês](../../README.md)
+  - [Documentação em Português](./REDME_pt_br.md)
+
 ### ✦ Introdução
 A biblioteca runescan visa simplificar a lógica condicional, permitindo que os desenvolvedores evitem estruturas excessivas de **if-else** e tornem o código mais legível e expressivo.
 
@@ -34,6 +42,7 @@ yarn add runescan
 ### ✦ Principais métodos
 > falando um pouco sobre os principais métodos e o que cada um faz.
 
+<br>
 
 ### `match()`:
 
@@ -78,7 +87,7 @@ Introdução:
 
 ```javascript
 
-import { match, with, default } from "runescan";
+import { match } from "runescan";
 
 // Exemplo de usuário e seu papel
 const user = {  
@@ -100,5 +109,5 @@ console.log(acessLevel);
 ```
 
 
-### ✦ Contributions
-We are open to contributions! Before you start, please read our [**contribution guidelines**](../../CONTRIBUTING.md).
+### ✦ Contribuições
+Estamos abertos a contribuições! Antes de começar, leia nossas [**diretrizes de contribuição**](../../CONTRIBUTING.md).

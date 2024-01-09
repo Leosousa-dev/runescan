@@ -15,6 +15,16 @@
 ### ✦ Introduction
 The Runescan library aims to simplify conditional logic, allowing developers to avoid excessive **if-else** structures and make the code more readable and expressive.
 
+### ✦ Documentation
+
+The documentation is available in various versions and languages. Choose the version and language that suits you best:
+
+
+- [Versão 1.0](docs/v1.0/README.md)
+  - [Documentation in English](README.md)
+  - [Documentation in Portuguese](docs/v1.0/REDME_pt_br.md)
+
+
 ### ✦ Installation
 
 > Installing the library is straightforward.
@@ -103,3 +113,5 @@ const accessLevel = match(user.role)
 console.log(accessLevel);
 ```
 
+### ✦ Contributions
+We are open to contributions! Before you start, please read our [**contribution guidelines**](../../CONTRIBUTING.md).

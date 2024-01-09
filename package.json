@@ -13,9 +13,7 @@
   
   "scripts": {
     "dev": "tsx src/index.ts",
-    "build": "tsc",
-    "build:test": "node dist/test/usage.js",
-    "test": "npx tsx src/test/usage.ts"
+    "build": "tsc"
   },
   "license": "MIT",
   "devDependencies": {
