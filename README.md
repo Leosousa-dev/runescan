@@ -1,6 +1,6 @@
 <div align="center">
    <h1>Runescan</h1>
-   <strong>Runescan</strong> - Simplificando o Reconhecimento de Padrões
+   <strong>Runescan</strong> - Simplifying Pattern Recognition
 </div>
 <br>
 <div align="center">
@@ -12,94 +12,94 @@
 
 </div>
 
-### ✦ Introdução
-A biblioteca runescan visa simplificar a lógica condicional, permitindo que os desenvolvedores evitem estruturas excessivas de **if-else** e tornem o código mais legível e expressivo.
+### ✦ Introduction
+The Runescan library aims to simplify conditional logic, allowing developers to avoid excessive **if-else** structures and make the code more readable and expressive.
 
-### ✦ Instalação
+### ✦ Installation
 
-> Para realizar a instalação da lib e bem simples.
->
+> Installing the library is straightforward.
+
 
 ```bash
 npm i runescan
 ```
-Ou use o yarn caso preferir.
-
+**Or use yarn if you prefer.**
 ```bash
 yarn add runescan
+``` 
+<br>
+
+### ✦ Main Methods
+
+>Let's talk a bit about the main methods and what each one does.
+
+<br>
+
+`match():`
+
+Method used to initialize a structure to perform checks on a value. It expects a value that can be of type string, number, bool.
+
+```javascript
+  // importing the library
+  import {match} from "runescan";
+
+  // using the match method
+  match(value)
 ```
 <br>
 
+`with():`
 
-### ✦ Principais métodos
-> falando um pouco sobre os principais métodos e o que cada um faz.
-
-
-### `match()`:
-
-Método utilizado para inicializar uma estrutura para realizar verificações de um valor. Ele espera um valor que pode ser do tipo string, number, bool.   
-
-```javascript
-  // importando a lib
-  import {match} from "runescan";
-
-  // usando o metodo match
-  match(value)
-
-```
----
-### `with()`:
-
-O método `with()` é utilizado para realizar verificações e executar ações com base no valor recebido. Ele espera dois argumentos:
+The `with()` method is used to perform checks and execute actions based on the received value. It expects two arguments:
+<br>
 
 **expected:**
->O valor com o qual deseja-se comparar o valor inicial fornecido ao método match(). Pode ser uma string, número, booleano, etc…
 
-**fn:** 
-> Uma função a ser executada se houver correspondência entre o valor inicial e o valor esperado. Esta função pode conter a lógica desejada para lidar com a correspondência.
----
-### **`default()`**:
-O método default como o nome ja sugere e um método padrão que sera executado caso não aja nehuma correspondência. Ele espera somente um argumento.
+>The value with which you want to compare the initial value provided to the match() method. It can be a string, number, boolean, etc...
 
 **fn:**
 
-> Uma função a ser executada caso não houver nenhuma correspondência entre o valor inicial e os valores esperados
->
+>A function to be executed if there is a match between the initial value and the expected value. This function can contain the desired logic to handle the match.
 
-### ✦ exemplo de uso
+---
 
-**Problema: Autenticação de Usuários Baseada em Papéis**
+`default():`
 
-Introdução:
+The default method, as the name suggests, is a default method that will be executed if there is no match. It expects only one argument.
 
->Imagine um sistema complexo de autenticação de usuários, onde diferentes usuários têm acesso a recursos específicos com base em seus papéis. Por exemplo, um usuário pode ser um administrador, um moderador ou um usuário padrão, cada um com diferentes permissões.
+**fn:**
 
-**Solução usando Runescan:**
+>A function to be executed if there is no match between the initial value and the expected values
+
+
+### ✦ Example of Use
+Problem: Role-Based User Authentication
+
+**Introduction:**
+
+> Imagine a complex user authentication system, where different users have access to specific resources based on their roles. For example, a user can be an administrator, a moderator, or a standard user, each with different permissions.
+
+**Solution using Runescan:**
 
 ```javascript
 
-import { match, with, default } from "runescan";
+import { match } from "runescan";
 
-// Exemplo de usuário e seu papel
+// Example user and their role
 const user = {  
    name: "John",  
-   role: "admin", // Pode ser "admin", "moderator" ou "user"
+   role: "admin", // Can be "admin", "moderator", or "user"
 };
 
-// Utilizando Runescan para simplificar a lógica condicional
+// Using Runescan to simplify conditional logic
 
 const accessLevel = match(user.role)
-.with("admin", () => "Acesso total concedido")  
-.with("moderator", () => "Acesso moderado concedido")  
-.with("user", () => "Acesso limitado concedido")  
-.default(() => "Papel de usuário não reconhecido");
+.with("admin", () => "Full access granted")  
+.with("moderator", () => "Moderate access granted")  
+.with("user", () => "Limited access granted")  
+.default(() => "User role not recognized");
 
-// Resultado
-console.log(acessLevel);
-
+// Result
+console.log(accessLevel);
 ```
 
-
-## ✦ Contribuições
-
-Estamos abertos a contribuições! Antes de começar, leia nossas [diretrizes de contribuição](CONTRIBUTING.md).
