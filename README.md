@@ -98,3 +98,8 @@ const accessLevel = match(user.role)
 console.log(acessLevel);
 
 ```
+
+
+## ✦ Contribuições
+
+Estamos abertos a contribuições! Antes de começar, leia nossas [diretrizes de contribuição](CONTRIBUTING.md).
