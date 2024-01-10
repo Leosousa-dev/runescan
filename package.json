@@ -1,6 +1,6 @@
 {
   "name": "runescan",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "author": "leonarddev",
   "keywords": ["pattern matching", "javascript pattern matching", "simplified logic", "runescan library", "runescan", "reduce if-else"],
   "private": false,
