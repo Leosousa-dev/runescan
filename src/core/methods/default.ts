@@ -6,4 +6,4 @@ const outherWise = (context: MatchedContext, fn: voidFn): void =>{
    }
 };
 
-export {outherWise};
+export {outherWise}

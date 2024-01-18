@@ -1,18 +1,18 @@
 import {MatchedContext, MatcherResult, voidFn} from "../../types/methods"
-import {_default} from "./default"
+import {outherWise} from "./default"
 
-const _with = (context: MatchedContext, expected: any, fn: voidFn ): MatcherResult => {
+const _with = (context: MatchedContext, expected: any, callback: voidFn ): MatcherResult => {
 
-   if(context.matched){
-      return { with: _with.bind(null, context), default: _default.bind(null, context) };
+   if(context.hasMatched){
+      return { with: _with.bind(null, context), outherWise: outherWise.bind(null, context) };
    }
 
    if(expected === context.value){
-      fn()
-      context.matched = true;
+      callback()
+      context.hasMatched = true;
    
    }
-   return {with: _with.bind(null, context), default: _default.bind(null, context)};
+   return {with: _with.bind(null, context), outherWise: outherWise.bind(null, context)};
 }
 
 export {_with}
