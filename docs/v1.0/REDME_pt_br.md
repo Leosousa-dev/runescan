@@ -64,13 +64,13 @@ O método `with()` é utilizado para realizar verificações e executar ações 
 **expected:**
 >O valor com o qual deseja-se comparar o valor inicial fornecido ao método match(). Pode ser uma string, número, booleano, etc…
 
-**fn:** 
+**callback:** 
 > Uma função a ser executada se houver correspondência entre o valor inicial e o valor esperado. Esta função pode conter a lógica desejada para lidar com a correspondência.
 ---
-### **`default()`**:
-O método default como o nome ja sugere e um método padrão que sera executado caso não aja nehuma correspondência. Ele espera somente um argumento.
+### **`outherWise()`**:
+O método outherWise como o nome ja sugere e um método padrão que sera executado caso não aja nehuma correspondência. Ele espera somente um argumento.
 
-**fn:**
+**callback:**
 
 > Uma função a ser executada caso não houver nenhuma correspondência entre o valor inicial e os valores esperados
 >
@@ -101,7 +101,7 @@ const accessLevel = match(user.role)
 .with("admin", () => "Acesso total concedido")  
 .with("moderator", () => "Acesso moderado concedido")  
 .with("user", () => "Acesso limitado concedido")  
-.default(() => "Papel de usuário não reconhecido");
+.outherWise(() => "Papel de usuário não reconhecido");
 
 // Resultado
 console.log(acessLevel);
