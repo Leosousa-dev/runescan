@@ -67,17 +67,17 @@ The `with()` method is used to perform checks and execute actions based on the r
 
 >The value with which you want to compare the initial value provided to the match() method. It can be a string, number, boolean, etc...
 
-**fn:**
+**callback:**
 
 >A function to be executed if there is a match between the initial value and the expected value. This function can contain the desired logic to handle the match.
 
 ---
 
-`default():`
+`outherWise():`
 
-The default method, as the name suggests, is a default method that will be executed if there is no match. It expects only one argument.
+The outherWise method, as the name suggests, is a outherWise method that will be executed if there is no match. It expects only one argument.
 
-**fn:**
+**callback:**
 
 >A function to be executed if there is no match between the initial value and the expected values
 
@@ -107,7 +107,7 @@ const accessLevel = match(user.role)
 .with("admin", () => "Full access granted")  
 .with("moderator", () => "Moderate access granted")  
 .with("user", () => "Limited access granted")  
-.default(() => "User role not recognized");
+.outherWise(() => "User role not recognized");
 
 // Result
 console.log(accessLevel);
