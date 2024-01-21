@@ -3,6 +3,7 @@ export type MatcherFunction = (expected: any, callback: () => void) => MatcherRe
 
 export interface MatcherResult {
   with: MatcherFunction;
+  when: any;
   outherWise: (callback: () => void) => void;
 }
 
