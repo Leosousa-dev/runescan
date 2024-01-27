@@ -1,18 +1,13 @@
-import {MatchedContext, MatcherResult, voidFn} from "../types/methods";
-import {outherwise} from "./outherwise";
+import otherwise from "./otherwise";
+import {voidFn} from "../types/methods";
 
-const _with = (context: MatchedContext, expected: any, callback: voidFn ): MatcherResult => {
-
-   if(context.hasMatched){
-      return { with: _with.bind(null, context), outherWise: outherwise.bind(null, context) };
+const _with = (value: any) => (expected: any, callback: voidFn): void => {
+   if(value === expected){
+      callback();
+   }else{
+      otherwise(callback);
    }
 
-   if(expected === context.value){
-      callback()
-      context.hasMatched = true;
-   
-   }
-   return {with: _with.bind(null, context), outherWise: outherwise.bind(null, context)};
-};
+}
 
-export {_with};
+export default _with;

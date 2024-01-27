@@ -1,10 +1,11 @@
-import {_with} from "./with";
-import {outherwise} from "./outherwise";
+import otherwise from "./otherwise";
+import _with from "./with";
+
 import {Match, MatcherResult} from "../types/methods";
 
 const match: Match = (value: any): MatcherResult => ({
    with: _with (value),
-   otherWise: outherwise,
+   otherWise: otherwise,
 })
 
 export default match;
