@@ -3,15 +3,9 @@ export type MatcherFunction = (expected: any, callback: () => void) => MatcherRe
 
 export interface MatcherResult {
   with: MatcherFunction;
-  outherWise: (callback: () => void) => void;
+  otherWise: (callback: () => void) => void;
 }
 
 export type Match = (value: any) => MatcherResult;
-
-export type MatchedContext = {
-  hasMatched: boolean;
-  value?: any;
-};
-
 
 export type voidFn = () => void

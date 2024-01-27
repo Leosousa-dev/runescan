@@ -1,4 +1,4 @@
-import {MatchedContext, MatcherResult, voidFn} from "../../types/methods";
+import {MatchedContext, MatcherResult, voidFn} from "../types/methods";
 import {outherwise} from "./outherwise";
 
 const _with = (context: MatchedContext, expected: any, callback: voidFn ): MatcherResult => {
