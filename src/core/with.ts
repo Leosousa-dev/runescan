@@ -1,7 +1,9 @@
 
 const withfn = (value: any, pattern: any, callback: ()=> void): boolean=> {
-      if(value === pattern){
-         console.log("match: ", value, pattern)
+      let matched: boolean = false;
+
+      if(!matched && value === pattern){
+         matched = true;
          callback();
          return true;
       }
