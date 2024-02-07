@@ -1,14 +1,15 @@
+import match from "./match";
 
-const withfn = (value: any, pattern: any, callback: ()=> void): boolean=> {
+const withfn = (value: any, pattern: any, callback: ()=> void): any=> {
       let matched: boolean = false;
 
       if(!matched && value === pattern){
          matched = true;
          callback();
-         return true;
+         return {with: (pattern: any, callback: ()=> void) => withfn(value, pattern, callback), otherwise: (callback: ()=> void) => callback}
       }
-      console.log("different: ->\n ", value, pattern)
-   return false;
+   console.log("different: ->\n ", value, pattern)
+   return match(value)
 };
 
 export default withfn;
