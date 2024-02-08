@@ -1,1 +1,11 @@
 docs/
+
+.gitignore
+
+CONTRIBUTING.md
+
+package.json
+
+tsconfig.json
+
+yarn.lock
