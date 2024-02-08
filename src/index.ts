@@ -1,5 +1,5 @@
 import match from "./core/match";
 
 
-export {match}
 
+export {match}

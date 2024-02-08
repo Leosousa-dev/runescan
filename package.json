@@ -1,7 +1,8 @@
 {
   "name": "runescan",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "author": "leonarddev",
+  "type": "module",
   "keywords": ["pattern matching", "javascript pattern matching", "simplified logic", "runescan library", "runescan", "reduce if-else"],
   "private": false,
   "main": "dist/index.js",
