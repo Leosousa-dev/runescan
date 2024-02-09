@@ -1,0 +1,1 @@
+export const equal = (value: any, pattern: any): boolean => value === pattern
