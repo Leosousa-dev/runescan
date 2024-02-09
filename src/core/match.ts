@@ -12,3 +12,4 @@ const match = (value: any) => {
    return methods;
 }
 
+export default match;
