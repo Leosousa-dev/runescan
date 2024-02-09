@@ -1,10 +1,16 @@
+import withFn from "../core/with";
+import { matchObjType } from "../types/index";
 
+const createMatchObj = (value: any): matchObjType => {
+    let matched: boolean = false;
 
-const createMatchObj = (value: any) => {
-    let macthed: boolean = false;
-
-    const api = {
+    const matchObj = {
         value,
-        macthed,
+        matched,
+        with: (value: any, pattern: any): matchObjType => withFn(matchObj ,value, pattern )
     }
+
+    return matchObj;
 }
+
+export default createMatchObj;
