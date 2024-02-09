@@ -1,6 +1,9 @@
 <div align="center">
    <h1>Runescan</h1>
    <strong>Runescan</strong> - Simplifying Pattern Recognition
+
+   <br>
+   <img alt="example use" src="./docs/images/example.png" width="500">
 </div>
 <br>
 <div align="center">

@@ -1,6 +1,10 @@
 <div align="center">
    <h1>Runescan</h1>
    <strong>Runescan</strong> - Simplificando o Reconhecimento de Padrões
+
+
+   <br>
+   <img alt="example use" src="../images/example.png" width="500">
 </div>
 <br>
 <div align="center">
@@ -12,7 +16,7 @@
 
 </div>
 
-### Documentação
+### ✦ Documentação
 
 A documentação está disponível em várias versões e linguagens. Escolha a versão e linguagem apropriadas para você:
 
