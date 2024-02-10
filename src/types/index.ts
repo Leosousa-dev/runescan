@@ -1,8 +1,8 @@
-export type matchObjType<T> = {
+export type matchObjType = {
     matched: boolean,
-    value: T,
-    with: (value: T, pattern: T) => matchObjType<T>,
-    otherwise: (value: T) => T
+    value: any,
+    with: (value: any, pattern: any) => matchObjType,
+    otherwise: (callback: any) => any
 }
 
 export type voidCallback = () => void
