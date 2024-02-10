@@ -5,7 +5,8 @@ const match = (value: any) => {
    const matcheObj =  createMatchObj(value);
 
    const methods = {
-      with: matcheObj.with
+      with: matcheObj.with,
+      otherwise: matcheObj.otherwise
    };
 
 
