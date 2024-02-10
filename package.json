@@ -3,7 +3,14 @@
   "version": "1.0.6",
   "author": "leonarddev",
   "type": "module",
-  "keywords": ["pattern matching", "javascript pattern matching", "simplified logic", "runescan library", "runescan", "reduce if-else"],
+  "keywords": [
+    "pattern matching",
+    "javascript pattern matching",
+    "simplified logic",
+    "runescan library",
+    "runescan",
+    "reduce if-else"
+  ],
   "private": false,
   "main": "dist/index.js",
   "types": "dist/types.d.ts",
@@ -11,7 +18,6 @@
     "dist",
     "types"
   ],
-  
   "scripts": {
     "dev": "tsx src/index.ts",
     "build": "tsc"
