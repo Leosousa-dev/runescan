@@ -3,7 +3,7 @@
    <strong>Runescan</strong> - Simplifying Pattern Recognition
 
    <br>
-   <img alt="example use" src="./docs/images/example.png" width="500">
+   <img alt="example use" src="./public/example.png" width="500">
 </div>
 <br>
 <div align="center">
